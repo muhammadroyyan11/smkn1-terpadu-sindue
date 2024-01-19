@@ -1,0 +1,22 @@
+:root{
+	--c1: #3a7e3a;
+	--c2: #805a3b;
+	--cdark: #133713;
+	--bg1: #3a7e3a;
+	--bg2: #805a3b;
+	--bg1soft: #529e52;
+	--bg2soft: #c1a28a;
+	--bgdark: #133713;
+	--bggrad-lr1: linear-gradient(to right, var(--bg1), var(--bg2));
+	--bggrad-top1: linear-gradient(to top, var(--bg2), var(--bg1));
+	--bggrad-top2: linear-gradient(to top, var(--bg1), var(--bg2));
+}
+.c1{color:var(--c1);fill:var(--c1);}
+.c2 {color:var(--c2);fill:var(--c2);}
+.bg1{background:var(--bg1);}
+.bg2{background:var(--bg2);}
+.bgdark{background:var(--bgdark);}
+.bggrad-lr1{background:linear-gradient(to right, var(--bg1), var(--bg2));}
+.bggrad-lr2{background:linear-gradient(to right, var(--bg1), var(--bg1) 60%, var(--bg2));}
+.bggrad-lr3{background:linear-gradient(to right, var(--bg2), var(--bg1));}
+.bggrad-tb{background:linear-gradient(to top, var(--bg2), var(--bg1));}

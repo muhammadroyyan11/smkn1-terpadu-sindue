@@ -1,0 +1,31 @@
+
+
+body.darkmode{background:#212121;color:#e0e0e0;}
+:root .darkmode{
+	--cdefault: #e0e0e0;
+	--cblack: #e0e0e0;
+	--cwhite: #ffffff;
+	--cwhite-trans1: rgba(255,255,255,0.1);
+	--cgrey1: #dbdbdb;
+	--cgrey2: #bdbdbd;
+	--cgrey3: #c0c0c0;
+	--cgrey4: #919191;
+	--cgrey5: #515151;
+	--bgblack: #000000;
+	--bgwhite: #000000;
+	--bgwhite-trans2: rgba(0,0,0,0.2);
+	--bgwhite-trans4: rgba(0,0,0,0.4);
+	--bgwhite-trans5: rgba(0,0,0,0.5);
+	--bgwhite-trans8: rgba(0,0,0,0.8);
+	--bgblack-trans1: rgba(0,0,0,0.1);
+	--bgblack-trans2: rgba(0,0,0,0.2);
+	--bggrey1: #313131;
+	--bggrey2: #212121;
+	--bggrey3: #414141;
+	--bggrey4: #919191;
+	--brdblack: #000000;
+	--brdwhite: #ffffff;
+	--brdgrey: #616161;
+	--brdgrey-dark: #919191;
+}
+.darkmode .bgwhite{background:#000 !important;}
