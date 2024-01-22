@@ -32,7 +32,7 @@ class Data_Sekolah extends CI_Controller
         $this->load->view('layout/header-top', $data);
         $this->load->view('layout/header-bottom', $data);
         $this->load->view('layout/main-navigation', $data);
-        $this->load->view('data_download/data_download/download_v', $data);
+        $this->load->view('data_download/download_v', $data);
         $this->load->view('layout/footer-top');
         $this->load->view('layout/footer-bottom');
         $this->benchmark->mark('code_end');
