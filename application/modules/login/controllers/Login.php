@@ -48,6 +48,8 @@ class Login extends CI_Controller
     private function _login()
     {
         $cek_login = $this->Lm->login();
+
+        // var_dump($cek_login);
         if ($cek_login == 'Berhasil Login') {
             redirect(base_url() . 'dashboard');
         } else {

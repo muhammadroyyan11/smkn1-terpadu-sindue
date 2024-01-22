@@ -9,7 +9,7 @@ class Data_skema extends CI_Controller
         is_logged_in();
         cek_aktif_login();
         cek_akses_user();
-        cek_akses();  
+        cek_akses();
         $this->load->library('form_validation');
         $this->load->model('DataSkema_model', 'sch');
     }
@@ -27,7 +27,8 @@ class Data_skema extends CI_Controller
         $data['sekolah'] = $this->db->get('m_sekolah')->row_array();
         $data['pegawai'] = $this->db->get_where('pegawai', ['email_pegawai' => $this->session->userdata('email_pegawai')])->row_array();
         $data['skema'] = $this->sch->getSkema();
-    
+        // $data['count'] = $this->sch->getCount();
+        // var_dump($data['main_menu']);
         $this->load->view('layout/header-top', $data);
         $this->load->view('layout/header-bottom', $data);
         $this->load->view('layout/main-navigation', $data);

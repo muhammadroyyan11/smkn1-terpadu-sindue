@@ -15,6 +15,15 @@ function cek_hak_akses_bol($user_level, $list_hak_akses) {
 		return true;
 	}
 }
+function set_pesan($pesan, $tipe = true)
+{
+    $ci = get_instance();
+    if ($tipe) {
+        $ci->session->set_flashdata('pesan', "<div class='alert alert-success'><strong>SUCCESS!</strong> {$pesan} <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>");
+    } else {
+        $ci->session->set_flashdata('pesan', "<div class='alert alert-danger'><strong>ERROR!</strong> {$pesan} <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>");
+    }
+}
 function cek_hak_akses($user_level, $list_hak_akses) {
     if (!in_array($user_level, $list_hak_akses)) {
         redirect('unauthorized_access');

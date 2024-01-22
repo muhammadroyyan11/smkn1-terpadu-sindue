@@ -14,6 +14,12 @@ class DataSkema_model extends CI_Model
         return $bagidata;
     }
 
+    public function getCount(){
+        $this->db->select('*');
+        $this->db->from('jurusan');
+        return $this->db->get();
+    }
+
     public function simpan_tambah()
     {
         $kode_skema = htmlspecialchars($this->input->post('kode_skema', true));
