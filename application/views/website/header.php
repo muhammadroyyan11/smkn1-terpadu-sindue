@@ -185,17 +185,6 @@ thistime();
 											</ul>
 										</li>
 									</div>
-									<!-- <div class="carousel-item fadeIn3">
-										<li><a style="white-space: nowrap;" class="menu-down" href="#">Kesiswaan<span class='caret'></span></a>
-											<ul class="nav-sub bg-navsub">
-												<div class="nav-sub-inner">
-													<li><a href="<?= base_url('web_kesiswaan/osis') ?>" class="<?= ('web_kesiswaan/osis' == $this->uri->segment(1, 0) . $this->uri->slash_segment(2, 'leading') ? 'active' : '') ?>">OSIS</a></li>                      
-													<li><a href="<?= base_url('web_kesiswaan/ekstra') ?>" class="<?= ('web_kesiswaan/ekstra' == $this->uri->segment(1, 0) . $this->uri->slash_segment(2, 'leading') ? 'active' : '') ?>">EKSTRAKURIKULER</a></li>
-													<li><a href="<?= base_url('web_kesiswaan/prestasi') ?>" class="<?= ('web_kesiswaan/prestasi' == $this->uri->segment(1, 0) . $this->uri->slash_segment(2, 'leading') ? 'active' : '') ?>"">PRESTASI SISWA</a></li>
-												</div>
-											</ul>
-										</li>
-									</div> -->
 									<div class="carousel-item fadeIn3">
 										<li><a style="white-space: nowrap;" class="menu-down" href="#">Kesiswaan<span class='caret'></span></a>
 											<ul class="nav-sub bg-navsub">
@@ -207,6 +196,7 @@ thistime();
 											</ul>
 										</li>
 									</div>
+									
 									<div class="carousel-item fadeIn3">
 										<li><a style="white-space: nowrap;" class="menu-down" href="#">Informasi<span class='caret'></span></a>
 											<ul class="nav-sub bg-navsub">
@@ -242,7 +232,18 @@ thistime();
 												</div>
 											</ul>
 										</li>
-									</div>									
+									</div>	
+									<div class="carousel-item fadeIn3">
+										<li><a style="white-space: nowrap;" class="menu-down" href="#">Download<span class='caret'></span></a>
+											<ul class="nav-sub bg-navsub">
+												<div class="nav-sub-inner">
+													<li><a href="<?= base_url('web_download/sekolah') ?>" class="<?= ('web_download/sekolah' == $this->uri->segment(1, 0) . $this->uri->slash_segment(2, 'leading') ? 'active' : '') ?>">DATA SEKOLAH</a></li>                      
+													<li><a href="<?= base_url('web_download/siswa') ?>" class="<?= ('web_download/siswa' == $this->uri->segment(1, 0) . $this->uri->slash_segment(2, 'leading') ? 'active' : '') ?>">DATA SISWA</a></li>
+													<li><a href="<?= base_url('web_download/administrasi') ?>" class="<?= ('web_download/administrasi' == $this->uri->segment(1, 0) . $this->uri->slash_segment(2, 'leading') ? 'active' : '') ?>"">DATA ADMINSITRASI</a></li>
+												</div>
+											</ul>
+										</li>
+									</div>								
 									<div class="carousel-item fadeIn3">
 										<li><a style="white-space: nowrap;" href="<?= base_url('web_kegiatan/contact') ?>">Contact</a></li>
 									</div>											
